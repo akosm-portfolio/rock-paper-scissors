@@ -46,7 +46,7 @@ function PlayerWin(compChoice) {
     compLost_span.innerHTML = compLost;
     result_div.style.opacity = 0;
     setTimeout(() => {
-        result_div.innerHTML = "You won!<br>Your opponent chose<u><b>" + compChoice;
+        result_div.innerHTML = "You won!<br>Your opponent chose:<u>" + compChoice;
         result_div.style.opacity = 1;
     }, 300)
     EndGame();
@@ -58,7 +58,7 @@ function PlayerLose(compChoice) {
     compWon_span.innerHTML = compWon;
     result_div.style.opacity = 0;
     setTimeout(() => {
-        result_div.innerHTML = "You lost!<br>Your opponent chose<u><b>" + compChoice;
+        result_div.innerHTML = "You lost!<br>Your opponent chose:<u>" + compChoice;
         result_div.style.opacity = 1;
     }, 300)
     EndGame();
@@ -68,7 +68,7 @@ function Draw(compChoice) {
     draw_span.innerHTML = draw;
     result_div.style.opacity = 0;
     setTimeout(() => {
-        result_div.innerHTML = "Draw.<br>Your opponent also chose<u><b>" + compChoice;
+        result_div.innerHTML = "Draw.<br>Your opponent also chose:<u>" + compChoice;
         result_div.style.opacity = 1;
     }, 300)
     EndGame();
