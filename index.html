@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#f8dd74"/>
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors Game</h1>
+
+    </header>
+
+    <p id="scores-head">Scoreboard</p>
+    <div class="scores">
+        <div class="tag">
+            Player<span id="player-crown"></span><br>
+        </div>
+        
+        Win:<span id="player-won">0</span><br>
+        Loss:<span id="player-lost">0</span><br><br>
+        <div class="tag">
+            Machine<span id="comp-crown"></span><br>
+        </div>
+        
+        Win:<span id="comp-won">0</span><br>
+        Loss:<span id="comp-lost">0</span><br><br>
+        Draw:<span id="draw">0</span>
+    </div>
+
+    <div class="result">
+        <br>Choose from the options below:
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="assets/rock.png" alt="rock">
+        </div>
+        <div class="choice" id="paper">
+            <img src="assets/paper.png" alt="paper">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="assets/scissors.png" alt="scissors">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+<footer>
+    Mándi Ákos - 2020.04.15.
+</footer>
+
+</html>
